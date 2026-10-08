@@ -1,0 +1,35 @@
+# Ignore build artifacts and generated binary releases
+node_modules/
+app/node_modules/
+/dist
+/extracted_app_asar
+/extracted_electron_app_asar
+/resources/
+/installer/
+/Output/
+*.exe
+*.msi
+*.zip
+*.7z
+*.log
+.DS_Store
+Thumbs.db
+.vs/
+.env
+
+# Electron runtime
+electron-runtime/
+
+# OS & IDE files
+*.suo
+*.user
+*.userosscache
+*.sln.docstates
+
+# Packaged app files
+**/app.asar
+**/resources.pak
+
+# Fonts and large assets (keep if needed in source control)
+# app/dist/binz-accounting-app/assets/fonts/
+
