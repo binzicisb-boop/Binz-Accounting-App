@@ -1,0 +1,140 @@
+﻿:root {
+  --binz-primary: #0E5AA7;
+  --binz-on-primary: #FFFFFF;
+  --binz-accent: #2E9D4D;
+  --binz-danger: #D93025;
+  --binz-toolbar-bg: #EAF2FB;
+  --binz-toolbar-text: #102A43;
+  --binz-surface: #FFFFFF;
+  --binz-app-bg: #F7FAFC;
+  --binz-logo-max-width: 180px;
+  --binz-logo-max-height: 120px;
+  --binz-receipt-logo-width: 160px;
+  --binz-receipt-logo-height: 120px;
+  --binz-tab-container-height: 48px;
+  --binz-tab-label-line-height: 36px;
+  --binz-form-field-height: 56px;
+  --binz-input-height: 40px;
+  --binz-card-radius: 8px;
+  --binz-box-radius: 8px;
+}
+
+html {
+  --mat-option-selected-state-label-text-color: var(--binz-primary) !important;
+  --mat-full-pseudo-checkbox-selected-icon-color: var(--binz-accent) !important;
+  --mat-minimal-pseudo-checkbox-selected-checkmark-color: var(--binz-accent) !important;
+  --mat-toolbar-container-background-color: var(--binz-toolbar-bg) !important;
+  --mat-toolbar-container-text-color: var(--binz-toolbar-text) !important;
+  --mat-app-background-color: var(--binz-app-bg) !important;
+  --mdc-filled-text-field-focus-active-indicator-color: var(--binz-primary) !important;
+  --mdc-filled-text-field-focus-label-text-color: var(--binz-primary) !important;
+  --mdc-outlined-text-field-focus-outline-color: var(--binz-primary) !important;
+  --mdc-outlined-text-field-focus-label-text-color: var(--binz-primary) !important;
+  --mat-form-field-focus-select-arrow-color: var(--binz-primary) !important;
+  --mdc-slider-active-track-color: var(--binz-primary) !important;
+  --mdc-slider-handle-color: var(--binz-primary) !important;
+  --mat-slider-ripple-color: var(--binz-primary) !important;
+  --mat-badge-background-color: var(--binz-primary) !important;
+  --mdc-snackbar-container-color: var(--binz-toolbar-text) !important;
+  --mat-snack-bar-button-color: var(--binz-accent) !important;
+  --mat-datepicker-calendar-date-selected-state-background-color: var(--binz-primary) !important;
+  --mat-stepper-header-selected-state-icon-background-color: var(--binz-primary) !important;
+  --mat-stepper-header-done-state-icon-background-color: var(--binz-primary) !important;
+  --mat-stepper-header-edit-state-icon-background-color: var(--binz-primary) !important;
+  --mdc-secondary-navigation-tab-container-height: var(--binz-tab-container-height) !important;
+  --mat-form-field-container-height: var(--binz-form-field-height) !important;
+}
+
+body {
+  background: var(--binz-app-bg) !important;
+}
+
+.logo-light img,
+.logo img,
+.logo-container img,
+.receipt-logo {
+  max-width: var(--binz-logo-max-width) !important;
+  max-height: var(--binz-logo-max-height) !important;
+  object-fit: contain !important;
+}
+
+.logo-container {
+  max-width: var(--binz-logo-max-width) !important;
+}
+
+.receipt-bg .logo {
+  width: var(--binz-receipt-logo-width) !important;
+  height: var(--binz-receipt-logo-height) !important;
+}
+
+.mat-mdc-tab-header {
+  --mdc-secondary-navigation-tab-container-height: var(--binz-tab-container-height) !important;
+}
+
+.mat-mdc-tab .mdc-tab__text-label,
+.mat-mdc-tab-header .mdc-tab__text-label {
+  line-height: var(--binz-tab-label-line-height) !important;
+}
+
+.mat-mdc-form-field,
+.mat-form-field {
+  --mat-form-field-container-height: var(--binz-form-field-height) !important;
+}
+
+.mat-mdc-text-field-wrapper,
+.mat-form-field-flex,
+input.mat-mdc-input-element,
+.form-control {
+  min-height: var(--binz-input-height) !important;
+}
+
+.mdc-button.mat-primary,
+.mat-mdc-raised-button.mat-primary,
+.mat-mdc-unelevated-button.mat-primary,
+.mat-mdc-fab.mat-primary,
+.mat-mdc-mini-fab.mat-primary {
+  background-color: var(--binz-primary) !important;
+  color: var(--binz-on-primary) !important;
+}
+
+.mat-mdc-outlined-button.mat-primary {
+  border-color: var(--binz-primary) !important;
+  color: var(--binz-primary) !important;
+}
+
+.mat-mdc-checkbox-checked .mdc-checkbox__background,
+.mat-mdc-checkbox-indeterminate .mdc-checkbox__background,
+.mat-mdc-slide-toggle.mat-accent {
+  background-color: var(--binz-accent) !important;
+}
+
+.mat-toolbar,
+.mat-mdc-card,
+.mat-card {
+  background-color: var(--binz-surface) !important;
+  border-radius: var(--binz-card-radius) !important;
+}
+
+.modal-content,
+.mdc-dialog__surface,
+.mat-mdc-menu-panel,
+.box,
+.shadoweffect,
+.batch-card {
+  border-radius: var(--binz-box-radius) !important;
+}
+
+.mat-mdc-progress-bar .mdc-linear-progress__bar-inner,
+.mat-progress-bar-fill::after,
+.mat-mdc-progress-spinner circle,
+.mat-mdc-progress-spinner .mdc-circular-progress__indeterminate-circle-graphic {
+  stroke: var(--binz-primary) !important;
+  background-color: var(--binz-primary) !important;
+}
+
+.mat-mdc-form-field.mat-form-field-invalid,
+.mat-mdc-form-field-error,
+.mat-error,
+.text-danger {
+  color: var(--binz-danger) !important;
+}

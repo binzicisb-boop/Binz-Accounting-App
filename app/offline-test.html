@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Binz Accounting App</title>
+    <style>
+        :root { color-scheme: light; font-family: "Segoe UI", sans-serif; --ink: #182230; --muted: #657386; --line: #dce3eb; --blue: #1666d9; --soft: #f4f7fb; }
+        * { box-sizing: border-box; }
+        body { margin: 0; color: var(--ink); background: var(--soft); }
+        header { display: flex; align-items: center; justify-content: space-between; padding: 24px 34px; background: white; border-bottom: 1px solid var(--line); }
+        .brand { font-weight: 700; font-size: 21px; letter-spacing: .2px; }
+        .badge { padding: 7px 11px; border: 1px solid #b9dec9; border-radius: 5px; color: #217346; background: #effaf3; font-size: 12px; font-weight: 600; }
+        main { max-width: 1180px; margin: 0 auto; padding: 42px 34px 60px; }
+        .intro { margin-bottom: 30px; }
+        h1 { margin: 0 0 10px; font-size: 32px; }
+        .intro p { max-width: 650px; margin: 0; color: var(--muted); line-height: 1.6; }
+        .grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; margin-bottom: 24px; }
+        .metric, .panel { background: white; border: 1px solid var(--line); border-radius: 7px; box-shadow: 0 5px 18px rgba(20, 42, 70, .04); }
+        .metric { padding: 20px; }
+        .metric span { display: block; color: var(--muted); font-size: 13px; margin-bottom: 10px; }
+        .metric strong { font-size: 25px; }
+        .layout { display: grid; grid-template-columns: 1.4fr 1fr; gap: 24px; }
+        .panel { padding: 24px; }
+        h2 { margin: 0 0 18px; font-size: 18px; }
+        table { width: 100%; border-collapse: collapse; font-size: 14px; }
+        th, td { padding: 13px 8px; text-align: left; border-bottom: 1px solid var(--line); }
+        th { color: var(--muted); font-size: 12px; font-weight: 600; }
+        .status { color: #217346; font-weight: 600; }
+        .actions { display: grid; gap: 10px; }
+        button { border: 1px solid var(--line); border-radius: 5px; background: white; color: var(--ink); padding: 12px 14px; text-align: left; cursor: pointer; font: inherit; }
+        button:hover { border-color: var(--blue); color: var(--blue); }
+        .primary { border-color: var(--blue); background: var(--blue); color: white; text-align: center; }
+        .primary:hover { color: white; background: #0d55b8; }
+        .note { margin-top: 22px; padding: 13px 15px; background: #fff9e8; border: 1px solid #f1d88a; border-radius: 5px; color: #765d13; font-size: 13px; line-height: 1.5; }
+        @media (max-width: 800px) { .grid, .layout { grid-template-columns: 1fr 1fr; } .layout { grid-template-columns: 1fr; } }
+        @media (max-width: 520px) { header, main { padding-left: 18px; padding-right: 18px; } .grid { grid-template-columns: 1fr; } h1 { font-size: 26px; } }
+    </style>
+</head>
+<body>
+    <header><div class="brand">Binz Accounting App</div><div class="badge">LOCAL TEST MODE</div></header>
+    <main>
+        <section class="intro"><h1>Accounts workspace</h1><p>This local test workspace is running without GitHub, cloud updates, or external network requests. Use it to validate the desktop shell and local accounting flows.</p></section>
+        <section class="grid" aria-label="Account summary">
+            <div class="metric"><span>Cash balance</span><strong>Rs 248,500</strong></div>
+            <div class="metric"><span>Receivables</span><strong>Rs 96,200</strong></div>
+            <div class="metric"><span>This month sales</span><strong>Rs 184,750</strong></div>
+            <div class="metric"><span>Pending expenses</span><strong>Rs 32,480</strong></div>
+        </section>
+        <section class="layout">
+            <div class="panel"><h2>Recent transactions</h2><table><thead><tr><th>Description</th><th>Type</th><th>Amount</th></tr></thead><tbody><tr><td>Office supplies</td><td>Expense</td><td>Rs 8,400</td></tr><tr><td>Client invoice #1042</td><td>Sale</td><td>Rs 62,000</td></tr><tr><td>Bank transfer</td><td>Transfer</td><td>Rs 25,000</td></tr><tr><td>Monthly subscription</td><td>Expense</td><td>Rs 4,800</td></tr></tbody></table></div>
+            <div class="panel"><h2>Quick actions</h2><div class="actions"><button class="primary" onclick="alert('Local test action: create sale')">Create sale</button><button onclick="alert('Local test action: record expense')">Record expense</button><button onclick="alert('Local test action: open reports')">Open reports</button></div><div class="note"><strong>Offline status:</strong> all values on this screen are local test data. The cloud accounting service is not connected.</div></div>
+        </section>
+    </main>
+</body>
+</html>
