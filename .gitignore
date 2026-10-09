@@ -31,5 +31,11 @@ electron-runtime/
 **/resources.pak
 
 # Fonts and large assets (keep if needed in source control)
-# app/dist/binz-accounting-app/assets/fonts/
+app/dist/binz-accounting-app/assets/fonts/
 
+# Docs and temp files
+*.pdf
+*.txt
+app-data/
+temp_string_table*.txt
+top50.json
