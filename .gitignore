@@ -39,3 +39,8 @@ app/dist/binz-accounting-app/assets/fonts/
 app-data/
 temp_string_table*.txt
 top50.json
+
+# Project artifacts
+deobfuscation_map.json
+generate-folder-inventory.ps1
+RUN-LOCAL-TEST.ps1
